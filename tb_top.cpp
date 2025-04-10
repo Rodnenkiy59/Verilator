@@ -65,31 +65,6 @@ int main(int argc, char** argv, char** env) {
 
 	outFile.close();
 
-    // std::ifstream inFile(filename, std::ios::binary);
-    // if (!inFile.is_open()) {
-    //     std::cout << "Ошибка открытия файла для чтения!" << std::endl;
-    //     return 1;
-    // }
-
-    // for (int y = 0; y < 5; y++) {
-    //     for (int x = 0; x < 5; x++) {
-    //         uint8_t r, g, b;
-    //         inFile.read(reinterpret_cast<char*>(&r), sizeof(uint8_t));
-    //         inFile.read(reinterpret_cast<char*>(&g), sizeof(uint8_t));
-    //         inFile.read(reinterpret_cast<char*>(&b), sizeof(uint8_t));
-            
-    //         // Выводим первые несколько значений для проверки
-    //         if (x < 5 && y < 5) {
-    //             std::cout << "Pixel (" << x << "," << y << "): R=" << (int)r 
-    //                  << " G=" << (int)g << " B=" << (int)b << std::endl;
-    //         }
-    //     }
-    // }
-
-	// std::cout << ("Sim time =", sim_time) << std::endl;
-
-	// inFile.close();
-
 	m_trace->close();
 	delete dut;
 	exit(EXIT_SUCCESS);
