@@ -42,3 +42,5 @@ clean:
 	rm -rf .stamp.*;
 	rm -rf ./obj_dir
 	rm -rf waveform.vcd
+	rm -rf pixel_data.bin
+	rm -rf output.png
